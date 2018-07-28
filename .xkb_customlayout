@@ -1,0 +1,69 @@
+# records that were deliberately changed are listed below
+# rest of the config remains as default.
+# more addnotations, notes and general intent of it to follow
+
+xkb_types "complete" {
+    type "LOCAL_EIGHT_LEVEL" {
+        modifiers= Shift+Lock+Control+LevelThree;
+        map[Shift+Lock]= Level1;
+        map[Shift]= Level2;
+        map[Lock]= Level2;
+        map[LevelThree]= Level3;
+        map[Shift+Lock+LevelThree]= Level3;
+        map[Shift+LevelThree]= Level4;
+        map[Lock+LevelThree]= Level4;
+        map[Control]= Level5;
+        map[Shift+Lock+Control]= Level5;
+        map[Shift+Control]= Level6;
+        map[Lock+Control]= Level6;
+        map[Control+LevelThree]= Level7;
+        map[Shift+Lock+Control+LevelThree]= Level7;
+        map[Shift+Control+LevelThree]= Level8;
+        map[Lock+Control+LevelThree]= Level8;
+        level_name[Level1]= "Base";
+        level_name[Level2]= "Shift";
+        level_name[Level3]= "Level3";
+        level_name[Level4]= "Shift Level3";
+        level_name[Level5]= "Ctrl";
+        level_name[Level6]= "Shift Ctrl";
+        level_name[Level7]= "Level3 Ctrl";
+        level_name[Level8]= "Shift Level3 Ctrl";
+    };
+};
+
+xkb_symbols "pc+pl+inet(evdev)+capslock(ctrl_modifier)+terminate(ctrl_alt_bksp)" {
+    key <AD06> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               y,               Y,       leftarrow,             yen,  Escape ]
+    };
+    key <AD07> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               u,               U,       downarrow,         uparrow,  Prior ]
+    };
+    key <AD08> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               i,               I,      rightarrow,           U2194,  Up ]
+    };
+    key <AD09> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               o,               O,          oacute,          Oacute,  Next ]
+    };
+    key <AC06> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               h,               H, rightsinglequotemark,           U2022,     BackSpace ]
+    };
+    key <AC07> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               j,               J,           schwa,           SCHWA,  Left ]
+    };
+    key <AC08> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               k,               K,        ellipsis,     dead_stroke,  Down ]
+    };
+    key <AC09> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               l,               L,         lstroke,         Lstroke, Right ]
+    };
+
+    key <LCTL> {         [       Control_L, ISO_Level5_Shift ] };
+};
