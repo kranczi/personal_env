@@ -64,6 +64,9 @@ xkb_symbols "pc+pl+inet(evdev)+capslock(ctrl_modifier)+terminate(ctrl_alt_bksp)"
         type= "LOCAL_EIGHT_LEVEL",
         symbols[Group1]= [               l,               L,         lstroke,         Lstroke, Right ]
     };
-
+    key <AB07> {
+        type= "LOCAL_EIGHT_LEVEL",
+        symbols[Group1]= [               m,               M,              mu,        infinity,  Return ]
+    };
     key <LCTL> {         [       Control_L, ISO_Level5_Shift ] };
 };
