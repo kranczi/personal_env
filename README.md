@@ -4,6 +4,7 @@ Personal setup for the following packages:
 - fish
 - xkb
 - nvim
+- sublime
 
 More details on specific changes:
 - tmux: most important adjustments:
@@ -36,3 +37,7 @@ this is expected and one has to accept the state of it:
 
 - nvim: add plugins and some config.
 (more docs to follow)
+
+- sublime: keymap to reflect general mappings
+(as some of the defaults are overwritten, find a suitable replacment
+add additional mappings for tab changes)
