@@ -1,7 +1,10 @@
 [
-	{ "keys": ["ctrl+h"], "command": "left_delete" },
-	{ "keys": ["ctrl+j"], "command": "move", "args": {"by": "characters", "forward": false} },
-	{ "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true} },
-	{ "keys": ["ctrl+i"], "command": "move", "args": {"by": "lines", "forward": false} },
-	{ "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["ctrl+h"], "command": "left_delete" },
+    { "keys": ["ctrl+o"], "command": "next_view" },
+    { "keys": ["ctrl+u"], "command": "prev_view" },
+    { "keys": ["ctrl+j"], "command": "move", "args": {"by": "characters", "forward": false} },
+    { "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true} },
+    { "keys": ["ctrl+i"], "command": "move", "args": {"by": "lines", "forward": false} },
+    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": true} },
+    { "keys": ["alt+b"], "command": "cancel_build" }
 ]
